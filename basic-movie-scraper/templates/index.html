@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flask Input Example</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1 class="big-heading">RANDOM MOVIE QUOTE GENERATOR</h1>
+    <div class="card">
+      <h1>Enter a movie name:</h1>
+      <form action="/submit" method="POST">
+        <input
+          type="text"
+          name="user_input"
+          class="cool-input"
+          placeholder="Type something..."
+          required
+        />
+        <button type="submit" class="cool-button">Submit</button>
+    </div>
+    </form>
+  </body>
+</html>
